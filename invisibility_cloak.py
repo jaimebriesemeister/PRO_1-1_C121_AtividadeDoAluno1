@@ -57,9 +57,11 @@ while (cap.isOpened()):
    
 
     #Gerando o resultado final mesclando res_1 e res_2
+    final_output = img
+    output_file.write(img)
     
     #Exibindo o resultado para o usuário
-    
+    # cv2.imshow("magica", final_output)
     cv2.waitKey(1)
 
 cap.release()
